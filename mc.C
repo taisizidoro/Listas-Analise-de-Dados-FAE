@@ -22,18 +22,14 @@ void mc()
 
 
 		//gera x uniforme entre 0 e 3
-		//mudei de double pra int
 		Int_t x = i;
 
 
 		//gera y uniforme entre 0 e 64
-		//mudei de double pra int
 		Int_t y = r->Rndm(64);
 
 		//calculando z = f(x) = (1-x^2)^2 para cada x gerado
-		//mudei de double pra int
 		f = (b - a) - ((2 * pow(b, 3) / 3) - (2 * pow(a, 3)) / 3) + ((pow(b, 5) / 5) - (pow(a, 5)) / 5);
-		//printf("%.0d\n", f);
 
 	}
 	
