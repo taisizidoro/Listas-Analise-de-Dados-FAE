@@ -34,6 +34,5 @@ void mc()
 	}
 	
 	cout << "O valor da integral de f(x)= (1-x^2)^2 = " << f << endl;
-	
 
 }
