@@ -19,7 +19,7 @@ void teste()
    TCanvas* c1 = new TCanvas();
    RooPlot* frame = x.frame() ;
    toyData->plotOn(frame) ;
-   cball.plotOn(frame) ;;
+   cball.plotOn(frame) ;
    frame->Draw() ;
    c1->Draw() ;
 }
