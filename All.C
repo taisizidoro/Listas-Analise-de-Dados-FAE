@@ -13,7 +13,7 @@ void All(){
 
 TFile *f= new TFile("DataSet_lowstat.root");
 RooDataSet * data = ( RooDataSet *)f->Get("data");
-RooRealVar mass("mass","invariant mass (GeV/c2)",0,12);
+RooRealVar mass("mass","invariant mass (GeV/c2)",2,12);
 
 
 //Crystal ball for the J/psi
@@ -47,8 +47,8 @@ sum.fitTo(*data);
 TCanvas* c1 = new TCanvas();
 RooPlot* mframe = mass.frame();
 data->plotOn(mframe);
-//signal.plotOn(mframe);
+sum.plotOn(mframe);
 mframe->Draw();
- c1->Draw() ;
+c1->Draw() ;
 
 }
